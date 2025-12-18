@@ -21,7 +21,7 @@
         margin-bottom: 20px;
     }
 
-   ](https://github.com/BOSSAK3D/BOSSAK3D_LINKS/blob/main/LOGO%20BOSSAK3D.png) h1 {
+   ](https://github.com/BOSSAK3D/BOSSAK3D_LINKS/blob/main/LOGO%20MAIN%20patch.png) h1 {
         margin: 10px 0;
     }
 
