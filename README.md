@@ -63,7 +63,7 @@
 
 <!-- LOGO (RAW LINK) -->
 <img 
-  src=(https://github.com/BOSSAK3D/BOSSAK3D_LINKS/blob/main/LOGO%20MAIN%20patch.png)
+  src=[LOGO MAIN patch.png](https://github.com/BOSSAK3D/BOSSAK3D_LINKS/blob/da054fedf321702162202965c8fc2077cc75b282/LOGO%20MAIN%20patch.png)
   alt="LOGO MAIN patch.png" 
   class="logo"
 >
