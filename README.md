@@ -6,3 +6,4 @@ Here you can find me in social media
     <a href="https://www.instagram.com/bossak3d/" target="_blank">📸 Instagram</a>
     <a href="https://www.tiktok.com/@bossak3d" target="_blank">🎵 TikTok</a>
 </div>
+LOGO BOSSAK3D.png
