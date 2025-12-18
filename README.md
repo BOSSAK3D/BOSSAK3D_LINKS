@@ -15,13 +15,13 @@
         padding: 40px 20px;
     }
 
-   [ .logo {
+    .logo {
         width: 180px;
         max-width: 80%;
         margin-bottom: 20px;
     }
 
-   ](https://github.com/BOSSAK3D/BOSSAK3D_LINKS/blob/main/LOGO%20MAIN%20patch.png) h1 {
+    h1 {
         margin: 10px 0;
     }
 
@@ -63,8 +63,8 @@
 
 <!-- LOGO (RAW LINK) -->
 <img 
-  src="PUT_YOUR_RAW_IMAGE_LINK_HERE" 
-  alt="BOSSAK 3D Logo" 
+  src=(https://github.com/BOSSAK3D/BOSSAK3D_LINKS/blob/main/LOGO%20MAIN%20patch.png)
+  alt="LOGO MAIN patch.png" 
   class="logo"
 >
 
