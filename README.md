@@ -1,4 +1,3 @@
-# BOSSAK3D_LINKS
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,22 +7,22 @@
 
 <style>
     body {
+        margin: 0;
         font-family: Arial, sans-serif;
-        background: #111;
+        background: #0f0f0f;
         color: white;
         text-align: center;
         padding: 40px 20px;
-        margin: 0;
     }
 
-    .logo {
+   [ .logo {
         width: 180px;
         max-width: 80%;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
 
-    h1 {
-        margin-bottom: 10px;
+   ](https://github.com/BOSSAK3D/BOSSAK3D_LINKS/blob/main/LOGO%20BOSSAK3D.png) h1 {
+        margin: 10px 0;
     }
 
     p {
@@ -33,13 +32,14 @@
 
     .links a {
         display: block;
-        background: #ffffff;
-        color: #111;
-        text-decoration: none;
+        width: 100%;
+        max-width: 320px;
         margin: 12px auto;
-        padding: 15px;
-        max-width: 300px;
-        border-radius: 12px;
+        padding: 16px;
+        background: #ffffff;
+        color: #000;
+        text-decoration: none;
+        border-radius: 14px;
         font-weight: bold;
         font-size: 18px;
         transition: 0.3s;
@@ -54,15 +54,19 @@
     footer {
         margin-top: 40px;
         font-size: 12px;
-        opacity: 0.6;
+        opacity: 0.5;
     }
 </style>
-
 </head>
+
 <body>
 
-<!-- LOGO -->
-<img src="logo.png" alt="BOSSAK 3D Logo" class="logo">
+<!-- LOGO (RAW LINK) -->
+<img 
+  src="PUT_YOUR_RAW_IMAGE_LINK_HERE" 
+  alt="BOSSAK 3D Logo" 
+  class="logo"
+>
 
 <h1>BOSSAK 3D</h1>
 <p>Follow me on social media</p>
