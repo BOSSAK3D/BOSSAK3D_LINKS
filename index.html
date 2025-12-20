@@ -10,77 +10,87 @@ body {
     margin: 0;
     min-height: 100vh;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+    background-image: url("https://i.ibb.co/mrbGFbLb/LOGO-MAIN-patch.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: white;
     text-align: center;
+}
+
+/* لایه تاریک برای خوانایی */
+.overlay {
+    min-height: 100vh;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(2px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 40px 20px;
 }
 
-.logo img {
-    width: 180px;
-    max-width: 80%;
-    margin-bottom: 25px;
-}
-
 h1 {
-    margin: 10px 0;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
 }
 
 p {
-    opacity: 0.8;
-    margin-bottom: 30px;
+    opacity: 0.85;
+    margin-bottom: 25px;
 }
 
+/* دکمه‌های آینده‌ای */
 .links a {
     display: block;
-    max-width: 320px;
-    margin: 12px auto;
-    padding: 16px;
-    background: white;
-    color: black;
+    width: 240px;
+    margin: 10px auto;
+    padding: 12px 16px;
+    background: rgba(255,255,255,0.15);
+    color: white;
     text-decoration: none;
-    border-radius: 14px;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.3s;
+    border-radius: 18px;
+    font-weight: 600;
+    font-size: 16px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.25);
+    transition: all 0.3s ease;
 }
 
 .links a:hover {
-    background: #ff0050;
-    color: white;
-    transform: scale(1.05);
+    background: rgba(255,255,255,0.3);
+    transform: scale(1.07);
+    box-shadow: 0 0 20px rgba(255,0,80,0.6);
 }
 
 footer {
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 12px;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 </style>
 </head>
 
 <body>
 
-<!-- LOGO -->
-<div class="logo">
-    <a href="https://ibb.co/twQ4PQ7Q" target="_blank">
-        <img src="https://i.ibb.co/mrbGFbLb/LOGO-MAIN-patch.png" alt="BOSSAK 3D Logo">
-    </a>
+<div class="overlay">
+
+    <h1>BOSSAK 3D</h1>
+    <p>Future of 3D Printing</p>
+
+    <div class="links">
+        <a href="https://www.youtube.com/@BOSSAK3D" target="_blank">📺 YouTube</a>
+        <a href="https://www.instagram.com/bossak3d/" target="_blank">📸 Instagram</a>
+        <a href="https://www.tiktok.com/@bossak3d" target="_blank">🎵 TikTok</a>
+        <a href="https://t.me/bossak3dd" target="_blank">✈️ Telegram</a>
+    </div>
+
+    <footer>
+        © 2025 BOSSAK 3D
+    </footer>
+
 </div>
-
-<h1>BOSSAK 3D</h1>
-<p>Follow me on social media</p>
-
-<div class="links">
-    <a href="https://www.youtube.com/@BOSSAK3D" target="_blank">📺 YouTube</a>
-    <a href="https://www.instagram.com/bossak3d/" target="_blank">📸 Instagram</a>
-    <a href="https://www.tiktok.com/@bossak3d" target="_blank">🎵 TikTok</a>
-    <a href="https://t.me/bossak3dd" target="_blank">✈️ Telegram</a>
-</div>
-
-<footer>
-    © 2025 BOSSAK 3D
-</footer>
 
 </body>
 </html>
