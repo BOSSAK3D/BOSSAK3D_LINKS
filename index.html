@@ -10,33 +10,32 @@ body {
     margin: 0;
     min-height: 100vh;
     font-family: Arial, sans-serif;
-    background: 
-        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-        url("https://i.ibb.co/mrbGFbLb/LOGO-MAIN-patch.png");
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+                url("https://i.ibb.co/4nG3Dd0w/LOGO-MAIN.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     color: white;
     text-align: center;
+    perspective: 1000px; /* حس عمق */
 }
 
-/* افکت لایه‌های پرینت سه‌بعدی */
+/* خطوط لایه‌های پرینت */
 body::before {
     content: "";
     position: fixed;
     inset: 0;
     background: repeating-linear-gradient(
         to bottom,
-        rgba(255,255,255,0.03),
-        rgba(255,255,255,0.03) 1px,
+        rgba(255,255,255,0.02),
+        rgba(255,255,255,0.02) 1px,
         transparent 1px,
-        transparent 4px
+        transparent 6px
     );
     pointer-events: none;
 }
 
-/* لایه اصلی */
+/* کانتینر اصلی */
 .container {
     min-height: 100vh;
     display: flex;
@@ -47,23 +46,25 @@ body::before {
     position: relative;
 }
 
-/* واترمارک لوگو */
+/* لوگوی واترمارک سه‌بعدی */
 .watermark {
     position: absolute;
     inset: 0;
-    background-image: url("https://i.ibb.co/mrbGFbLb/LOGO-MAIN-patch.png");
-    background-size: 420px;
+    background-image: url("https://i.ibb.co/4nG3Dd0w/LOGO-MAIN.png");
+    background-size: 450px;
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.12;
+    transform: rotateX(10deg) rotateY(5deg);
     filter: blur(1px);
     z-index: 0;
 }
 
-/* محتوا روی واترمارک */
+/* محتوا روی لوگو */
 .content {
     position: relative;
     z-index: 1;
+    transform: translateZ(50px); /* جلوتر از بک‌گراند */
 }
 
 h1 {
@@ -72,32 +73,34 @@ h1 {
 }
 
 p {
-    opacity: 0.8;
+    opacity: 0.85;
     margin-bottom: 26px;
     font-size: 14px;
 }
 
-/* دکمه‌های آینده‌ای */
+/* دکمه‌های مدرن سه‌بعدی */
 .links a {
     display: block;
-    width: 230px;
-    margin: 10px auto;
+    width: 220px;
+    margin: 12px auto;
     padding: 12px 14px;
     background: rgba(255,255,255,0.12);
     color: white;
     text-decoration: none;
-    border-radius: 16px;
+    border-radius: 18px;
     font-weight: 600;
     font-size: 15px;
     backdrop-filter: blur(12px);
     border: 1px solid rgba(255,255,255,0.25);
-    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transition: all 0.4s ease;
+    transform-style: preserve-3d;
 }
 
 .links a:hover {
     background: rgba(255,255,255,0.25);
-    transform: scale(1.06);
-    box-shadow: 0 0 18px rgba(0,255,255,0.45);
+    transform: translateZ(30px) scale(1.08);
+    box-shadow: 0 15px 35px rgba(0,255,255,0.55);
 }
 
 footer {
