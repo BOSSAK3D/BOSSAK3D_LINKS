@@ -10,7 +10,9 @@ body {
     margin: 0;
     min-height: 100vh;
     font-family: Arial, sans-serif;
-    background-image: url("https://i.ibb.co/mrbGFbLb/LOGO-MAIN-patch.png");
+    background: 
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+        url("https://i.ibb.co/mrbGFbLb/LOGO-MAIN-patch.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,76 +21,116 @@ body {
     text-align: center;
 }
 
-/* لایه تاریک برای خوانایی */
-.overlay {
+/* افکت لایه‌های پرینت سه‌بعدی */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.03),
+        rgba(255,255,255,0.03) 1px,
+        transparent 1px,
+        transparent 4px
+    );
+    pointer-events: none;
+}
+
+/* لایه اصلی */
+.container {
     min-height: 100vh;
-    background: rgba(0,0,0,0.55);
-    backdrop-filter: blur(2px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 40px 20px;
+    position: relative;
+}
+
+/* واترمارک لوگو */
+.watermark {
+    position: absolute;
+    inset: 0;
+    background-image: url("https://i.ibb.co/mrbGFbLb/LOGO-MAIN-patch.png");
+    background-size: 420px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.12;
+    filter: blur(1px);
+    z-index: 0;
+}
+
+/* محتوا روی واترمارک */
+.content {
+    position: relative;
+    z-index: 1;
 }
 
 h1 {
-    margin-bottom: 8px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    margin-bottom: 6px;
 }
 
 p {
-    opacity: 0.85;
-    margin-bottom: 25px;
+    opacity: 0.8;
+    margin-bottom: 26px;
+    font-size: 14px;
 }
 
 /* دکمه‌های آینده‌ای */
 .links a {
     display: block;
-    width: 240px;
+    width: 230px;
     margin: 10px auto;
-    padding: 12px 16px;
-    background: rgba(255,255,255,0.15);
+    padding: 12px 14px;
+    background: rgba(255,255,255,0.12);
     color: white;
     text-decoration: none;
-    border-radius: 18px;
+    border-radius: 16px;
     font-weight: 600;
-    font-size: 16px;
-    backdrop-filter: blur(10px);
+    font-size: 15px;
+    backdrop-filter: blur(12px);
     border: 1px solid rgba(255,255,255,0.25);
     transition: all 0.3s ease;
 }
 
 .links a:hover {
-    background: rgba(255,255,255,0.3);
-    transform: scale(1.07);
-    box-shadow: 0 0 20px rgba(255,0,80,0.6);
+    background: rgba(255,255,255,0.25);
+    transform: scale(1.06);
+    box-shadow: 0 0 18px rgba(0,255,255,0.45);
 }
 
 footer {
     margin-top: 30px;
-    font-size: 12px;
-    opacity: 0.6;
+    font-size: 11px;
+    opacity: 0.5;
 }
 </style>
 </head>
 
 <body>
 
-<div class="overlay">
+<div class="container">
 
-    <h1>BOSSAK 3D</h1>
-    <p>Future of 3D Printing</p>
+    <!-- لوگوی ثابت پس‌زمینه -->
+    <div class="watermark"></div>
 
-    <div class="links">
-        <a href="https://www.youtube.com/@BOSSAK3D" target="_blank">📺 YouTube</a>
-        <a href="https://www.instagram.com/bossak3d/" target="_blank">📸 Instagram</a>
-        <a href="https://www.tiktok.com/@bossak3d" target="_blank">🎵 TikTok</a>
-        <a href="https://t.me/bossak3dd" target="_blank">✈️ Telegram</a>
+    <!-- محتوای اصلی -->
+    <div class="content">
+        <h1>BOSSAK 3D</h1>
+        <p>3D Printing • Layers • Future</p>
+
+        <div class="links">
+            <a href="https://www.youtube.com/@BOSSAK3D" target="_blank">📺 YouTube</a>
+            <a href="https://www.instagram.com/bossak3d/" target="_blank">📸 Instagram</a>
+            <a href="https://www.tiktok.com/@bossak3d" target="_blank">🎵 TikTok</a>
+            <a href="https://t.me/bossak3dd" target="_blank">✈️ Telegram</a>
+        </div>
+
+        <footer>
+            © 2025 BOSSAK 3D
+        </footer>
     </div>
-
-    <footer>
-        © 2025 BOSSAK 3D
-    </footer>
 
 </div>
 
