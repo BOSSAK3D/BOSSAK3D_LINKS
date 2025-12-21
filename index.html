@@ -5,22 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BOSSAK 3D</title>
 
+<!-- فونت تکنولوژیک -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
 <style>
 body {
     margin: 0;
     min-height: 100vh;
     font-family: Arial, sans-serif;
-    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-                url("https://i.ibb.co/4nG3Dd0w/LOGO-MAIN.png");
+    background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+        url("https://i.ibb.co/4nG3Dd0w/LOGO-MAIN.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
     text-align: center;
-    perspective: 1000px; /* حس عمق */
+    perspective: 1000px;
 }
 
-/* خطوط لایه‌های پرینت */
+/* خطوط لایه‌های پرینت سه‌بعدی */
 body::before {
     content: "";
     position: fixed;
@@ -41,44 +45,35 @@ body::before {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding: 40px 20px;
-    position: relative;
 }
 
-/* لوگوی واترمارک سه‌بعدی */
-.watermark {
-    position: absolute;
-    inset: 0;
-    background-image: url("https://i.ibb.co/4nG3Dd0w/LOGO-MAIN.png");
-    background-size: 450px;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.12;
-    transform: rotateX(10deg) rotateY(5deg);
-    filter: blur(1px);
-    z-index: 0;
+/* لوگو در بالا */
+.top-logo img {
+    width: 160px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 20px rgba(0,255,255,0.35));
 }
 
-/* محتوا روی لوگو */
-.content {
-    position: relative;
-    z-index: 1;
-    transform: translateZ(50px); /* جلوتر از بک‌گراند */
-}
-
+/* عنوان BOSSAK 3D */
 h1 {
-    letter-spacing: 3px;
-    margin-bottom: 6px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    letter-spacing: 4px;
+    margin: 10px 0 6px;
+    text-shadow:
+        0 0 10px rgba(0,255,255,0.6),
+        0 0 20px rgba(0,255,255,0.35);
 }
 
+/* توضیح کوتاه */
 p {
     opacity: 0.85;
     margin-bottom: 26px;
     font-size: 14px;
 }
 
-/* دکمه‌های مدرن سه‌بعدی */
+/* دکمه‌های سه‌بعدی مدرن */
 .links a {
     display: block;
     width: 220px;
@@ -115,25 +110,24 @@ footer {
 
 <div class="container">
 
-    <!-- لوگوی ثابت پس‌زمینه -->
-    <div class="watermark"></div>
-
-    <!-- محتوای اصلی -->
-    <div class="content">
-        <h1>BOSSAK 3D</h1>
-        <p>3D Printing • Layers • Future</p>
-
-        <div class="links">
-            <a href="https://www.youtube.com/@BOSSAK3D" target="_blank">📺 YouTube</a>
-            <a href="https://www.instagram.com/bossak3d/" target="_blank">📸 Instagram</a>
-            <a href="https://www.tiktok.com/@bossak3d" target="_blank">🎵 TikTok</a>
-            <a href="https://t.me/bossak3dd" target="_blank">✈️ Telegram</a>
-        </div>
-
-        <footer>
-            © 2025 BOSSAK 3D
-        </footer>
+    <!-- لوگو بالا -->
+    <div class="top-logo">
+        <img src="https://i.ibb.co/4nG3Dd0w/LOGO-MAIN.png" alt="BOSSAK 3D Logo">
     </div>
+
+    <h1>BOSSAK 3D</h1>
+    <p>3D Printing • Layers • Future</p>
+
+    <div class="links">
+        <a href="https://www.youtube.com/@BOSSAK3D" target="_blank">📺 YouTube</a>
+        <a href="https://www.instagram.com/bossak3d/" target="_blank">📸 Instagram</a>
+        <a href="https://www.tiktok.com/@bossak3d" target="_blank">🎵 TikTok</a>
+        <a href="https://t.me/bossak3dd" target="_blank">✈️ Telegram</a>
+    </div>
+
+    <footer>
+        © 2025 BOSSAK 3D
+    </footer>
 
 </div>
 
