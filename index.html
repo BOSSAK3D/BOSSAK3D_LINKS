@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BOSSAK 3D</title>
 
-<!-- فونت تکنولوژیک -->
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+<!-- فونت آینده‌ای و صنعتی -->
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
 
 <style>
 body {
@@ -14,92 +14,74 @@ body {
     min-height: 100vh;
     font-family: Arial, sans-serif;
     background:
-        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-        url("https://i.ibb.co/4nG3Dd0w/LOGO-MAIN.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+        radial-gradient(circle at top, rgba(0,180,255,0.25), transparent 55%),
+        radial-gradient(circle at bottom, rgba(0,255,180,0.18), transparent 60%),
+        #0b0f14;
     color: white;
     text-align: center;
-    perspective: 1000px;
 }
 
-/* خطوط لایه‌های پرینت سه‌بعدی */
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: repeating-linear-gradient(
-        to bottom,
-        rgba(255,255,255,0.02),
-        rgba(255,255,255,0.02) 1px,
-        transparent 1px,
-        transparent 6px
-    );
-    pointer-events: none;
-}
-
-/* کانتینر اصلی */
+/* کانتینر */
 .container {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 20px;
+    padding: 35px 20px;
 }
 
-/* لوگو در بالا */
+/* لوگو بالا (شفاف و واضح) */
 .top-logo img {
-    width: 160px;
-    margin-bottom: 20px;
-    filter: drop-shadow(0 0 20px rgba(0,255,255,0.35));
+    width: 170px;
+    margin-bottom: 18px;
+    filter: drop-shadow(0 0 25px rgba(0,200,255,0.6));
 }
 
 /* عنوان BOSSAK 3D */
 h1 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 32px;
-    letter-spacing: 4px;
-    margin: 10px 0 6px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 38px;
+    letter-spacing: 6px;
+    margin: 8px 0 6px;
+    text-transform: uppercase;
     text-shadow:
-        0 0 10px rgba(0,255,255,0.6),
-        0 0 20px rgba(0,255,255,0.35);
+        0 0 12px rgba(0,200,255,0.9),
+        0 0 30px rgba(0,200,255,0.4);
 }
 
-/* توضیح کوتاه */
+/* زیرعنوان */
 p {
-    opacity: 0.85;
-    margin-bottom: 26px;
     font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 28px;
 }
 
-/* دکمه‌های سه‌بعدی مدرن */
+/* دکمه‌ها */
 .links a {
     display: block;
-    width: 220px;
-    margin: 12px auto;
-    padding: 12px 14px;
+    width: 200px;
+    margin: 10px auto;
+    padding: 11px 14px;
     background: rgba(255,255,255,0.12);
     color: white;
     text-decoration: none;
-    border-radius: 18px;
+    border-radius: 14px;
     font-weight: 600;
-    font-size: 15px;
-    backdrop-filter: blur(12px);
+    font-size: 14px;
+    backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.25);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-    transition: all 0.4s ease;
-    transform-style: preserve-3d;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.45);
+    transition: all 0.35s ease;
 }
 
 .links a:hover {
-    background: rgba(255,255,255,0.25);
-    transform: translateZ(30px) scale(1.08);
-    box-shadow: 0 15px 35px rgba(0,255,255,0.55);
+    background: rgba(0,200,255,0.25);
+    transform: scale(1.08);
+    box-shadow: 0 12px 30px rgba(0,200,255,0.6);
 }
 
 footer {
-    margin-top: 30px;
+    margin-top: 28px;
     font-size: 11px;
     opacity: 0.5;
 }
@@ -116,18 +98,16 @@ footer {
     </div>
 
     <h1>BOSSAK 3D</h1>
-    <p>3D Printing • Layers • Future</p>
+    <p>3D Printing • Future • Layers</p>
 
     <div class="links">
-        <a href="https://www.youtube.com/@BOSSAK3D" target="_blank">📺 YouTube</a>
-        <a href="https://www.instagram.com/bossak3d/" target="_blank">📸 Instagram</a>
-        <a href="https://www.tiktok.com/@bossak3d" target="_blank">🎵 TikTok</a>
-        <a href="https://t.me/bossak3dd" target="_blank">✈️ Telegram</a>
+        <a href="https://www.youtube.com/@BOSSAK3D" target="_blank">YouTube</a>
+        <a href="https://www.instagram.com/bossak3d/" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com/@bossak3d" target="_blank">TikTok</a>
+        <a href="https://t.me/bossak3dd" target="_blank">Telegram</a>
     </div>
 
-    <footer>
-        © 2025 BOSSAK 3D
-    </footer>
+    <footer>© 2025 BOSSAK 3D</footer>
 
 </div>
 
